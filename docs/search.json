@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "CapstoneQuarto",
+    "title": "Capstone Quarto",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "The Power of Quarto\nQuarto is a very versatile publishing system that allows the users of it to:\n\nMake presentation\nWebsites/Blogs Articles\nAnd even websites with the use of github pages\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
