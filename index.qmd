@@ -1,11 +1,15 @@
 ---
-title: "CapstoneQuarto"
+title: "Capstone Quarto"
 ---
 
-This is a Quarto website.
+# The Power of Quarto
+
+Quarto is a very versatile publishing system that allows the users of it to:
+
+-   Make presentation
+
+-   Websites/Blogs Articles
+
+-   And even websites with the use of github pages
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
