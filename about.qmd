@@ -16,6 +16,6 @@ title: "About"
 ![](images/clipboard-3146799296.png){fig-align="center"}
 
 ## Try it Out!
-Quarto really is great I recommend trying it out because most of us will have to present our work in the future and its a very versatile tool!
+Quarto really is great I recommend trying it out because most of us will have to present our work in the future and its a very versatile tool! Why won't this shit change?
 
 
