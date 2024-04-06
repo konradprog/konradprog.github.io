@@ -6,7 +6,7 @@ title: "My Taste is Still Better than Yours"
 
 ## Additions
 -   I wanted to add more of the code to my website in case anyone wanted to look more into my work as to how we figured out that I have the best taste
--   I'll also leave the slide info for context
+-   I'll also leave the slide info for context I (what do i do)
 
 ```{r}
 data <- read.csv('playlist.csv')
