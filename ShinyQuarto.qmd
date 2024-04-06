@@ -1,0 +1,5 @@
+---
+title: "ShinyQuarto"
+server: shiny
+---
+

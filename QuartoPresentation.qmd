@@ -1,0 +1,429 @@
+---
+title: "Quarto Presentations"
+format:
+  revealjs:
+    theme: night
+---
+
+# Overview
+
+## Goals of Quarto
+
+::: incremental
+-   Quarto is an open source publishing platform that allows users to create sleek documents, presentations, and even websites within R studio and other platforms
+-   The aim was to create a publishing environment that made it simple to insert code, plots, etc.
+-   This would help make presenting research and publications simpler with the aim of making it much easier to reproduce in order to further that research
+:::
+
+## Options for Presentation
+
+::: incremental
+-   Quarto offers a wide variety of document and presentation formats as well as being versatile with projects and and project types
+
+-   Quarto utilizes many of the functionalities of R Markdown and puts them into a single consistent system that expands it support for programming languages
+:::
+
+## Options for Presentation
+
+![](images/clipboard-2320562061.png){fig-align="center"}
+
+# Getting Started
+
+## Getting Started
+
+::: incremental
+-   Once in RStudio, click the new file drop down and select Quarto Presentation or Document
+-   This will bring up a window that allows you to name and pick the format you desire
+:::
+
+## Getting Started cont.
+
+
+-   Your document will start with some formatting options at the top
+-   This allows the user to choose the theme and the title and other information if required (date, output format, etc.)
+
+![](images/clipboard-280138171.png){fig-align="center" width=80% height=50%}
+
+
+## Editing Options
+
+::: incremental
+-   Markdown is not only for data scientists, it has options that it make it much simpler to use than a software like latex
+-   This is due to the editor options
+    -   Source: Code editor where the format follows the normal Rmarkdown editor style
+    -   Visual: An editor that operates a little more like a Microsoft Product with more built in features for people unfamiliar with RStudio/RMarkdown
+:::
+
+## Editing Options Cont.
+
+::: incremental
+-   The visual editor simplifies the look and feel of the editing, making screen shots easy to paste and being able to switch text options with the toolbar at the top
+-   The visual editor also has all the same code chunk abilities in case a data scientists hopes to simplify the presentation aspects but still wants to add code
+-   Adds to the flexibility of the publishing platform'
+:::
+
+# Features
+
+## Text in Quarto
+
+::: incremental
+-   Quarto has different header options that in the source editor you can alter by the amount of \# you put in front of the text
+-   Bullet points are marked with a dash before entering your text
+    -   Two tabs and dash will give you sub-points to attach texts
+    
+:::
+
+## Images in Quarto
+
+::: incremental
+-   When in the source editor, you can add images into the presentation by defining the path
+-   You can alter its placement in the slide and its size with brackets after defining the path
+-   The format for entering an image is !\[\*path\]{}
+:::
+
+::: incremental
+## Animations
+
+-   Quarto offers built animations for text, image, and code chunks
+-   You can also animate between slides with {auto-animate}
+-   When is source mode, slides can be formatted between chunks starting and ending with ':::'
+:::
+
+## Code Chunks in Quarto
+
+::: incremental
+-   The main advantage of Quarto to other presentation formats is having interactive code chunks within a document
+-   The user can also alter the settings in case they just want the output to be visible and not the code itself
+-   Quarto has support for up to 140 langauges and even if it doesn't support it you can establish the code and at least display the code for your audience
+:::
+
+## Code Chunks in Quarto examples
+
+```{r}
+#| echo: true
+library(ggplot2)
+
+mpg <- mtcars
+ggplot(mpg, aes(disp, hp, color = mpg)) +
+  geom_smooth(method = 'lm') + 
+  geom_point()
+```
+
+## Code Chunk Configuration
+
+::: incremental
+-   #\| include:
+    -   Prevents code and results from appearing but still runs it
+-   #\| echo:
+    -   Shows results but not the code
+-   #\| message:
+    -   will hide messages if set to false
+:::
+
+## Code Chunk cont.
+
+::: incremental
+-   #\| warning:
+    -   Will hide any code warning if option set to false
+-   #\| fig.cap:
+    -   Adds a caption if graphics are involved
+-   #\| code-fold:
+    -   If you put this at the top of the codes formatting options, will have code operate as a drop down
+:::
+
+## Extra Formatting Tricks
+
+::: incremental
+-   You can **Bold** and *Italicize* and even ***Bold Italicize*** based on the number of asterisks put you surround the text int.
+-   Subscript and Superscript can be done with \^\^ \~\~
+    -   2^2^ or a~2~
+-   Math equations can be manually put in when between dollar signs dollar signs
+    -   $$ y = mx + b  $$
+    -   $y = mx + b$
+:::
+
+## Extra Formatting Tricks cont.
+
+::: incremental
+-   You can make custom tables by hand in Quarto marking coulmns with a stack of \| and below the titles of each column running dashes under column title
+-   You can then format where the text goes in the heading with colons
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+:::
+
+## Extra Formatting Tricks cont.
+
+-   You can make flowcharts right inside Quarto using mermaid, label a codechunk with mermaid and you'll be able to make it
+
+```{mermaid}
+%%| fig-align: 'center'
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Use Quarto?}
+  C --> D[Yes]
+  C --> E[YES]
+
+```
+
+-   Quarto supports Mermaid and Graphiz for all of your diagram needs
+-   Find out more here <https://quarto.org/docs/authoring/diagrams.html>
+
+## Extra Formatting Tricks cont.
+
+-   You can create callout blocks that can act as warnings or notes for a reader to take note of as they read
+
+::: callout-note
+Note that there are five types of callouts, including: `note`, `tip`, `warning`, `caution`, and \`important'
+:::
+
+::: callout-warning
+Quarto is pretty lit!
+:::
+
+##  {auto-animate="true"}
+
+::: {style="margin-top: 100px;"}
+Example Presentation
+:::
+
+##  {auto-animate="true"}
+
+::: {style="margin-top 400px; fint-size: 32;"}
+My Music Taste is Better Than Yours
+:::
+
+## Spotify
+
+-   **Spotify** has become one of the top streaming platforms after being created in 2008
+
+-   I personally use it to listen to better music than you like
+
+-   You can actually find your playlist data online and export it
+
+![](images/clipboard-1335169120.png){fig-align="center"}
+
+## Spotify Data
+
+-   This data is from Exportify where you can turn your playlist into a csv and look through the data
+-   We will remove some columns that are not necessary or less interesting and get to the bottom of why I have the best taste ***possibly of all time***
+-   I'm loading the data in this slide but behind the scenes
+
+```{r}
+#| include: true
+
+data <- read.csv('playlist.csv')
+
+```
+
+## Cleaning Data
+
+-   We will remove the unnecessary columns to focus on Spotify's analytics and details on the artists and songs
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+data <- data[-c(1,2,6, 9,14,16)]
+
+head(data)
+
+```
+
+##  {auto-animate="true"}
+
+```{r}
+#| echo: true
+library(dplyr)
+artist_counts <- data %>%
+  group_by(Artist.Name.s.) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+```
+
+##  {auto-animate="true"}
+
+```{r}
+#| echo: true
+top_5_artists <- head(artist_counts, 5)
+
+print(top_5_artists)
+
+
+```
+
+::: callout-warning
+Some of these bands are too good! Listen at your own risk!
+:::
+
+```{r, results='hide'}
+# Length Averages
+#| echo: false
+aveLength <- (mean(data$Duration..ms.) /1000)
+aveLength
+
+longest_song <-  max(data$Duration..ms., na.rm = TRUE)
+longest_song/1000
+max_index <- which.max(data$Duration..ms.)
+max_row <- data[max_index, ]
+print(max_row)
+
+aveTemp <- mean(data$Tempo,na.rm = TRUE)
+
+aveTemp
+
+```
+
+```{r, results='hide'}
+
+#| echo: false
+
+genres_split <- strsplit(data$Genres, split = ",")
+genres_vector <- unlist(genres_split)
+genres_freq <- table(genres_vector)
+print(genres_freq)
+sorted_genres <- sort(genres_freq, decreasing = TRUE)
+most_frequent_genre <- names(sorted_genres)[1]
+
+
+print(most_frequent_genre)
+
+
+```
+
+## More Fun Facts About my Great Taste
+
+::: incremental
+-   The average song length on my playlist is 3 minutes and 38 seconds
+    -   The longest song is 18 minutes and 18 seconds, The Dripping Tap by King Gizzard and the Lizard Wizard
+-   My most common genre is... drumroll please...
+    -   Rock...
+-   Ignore that my average tempo is 125 bpm
+
+:::
+
+## Spotify Analytics
+
+-   Spotify tracks qualities of music and gives them a rating
+    -   Things like loudness, energy, danceability, etc.
+-   This is the data they use to create Spotify Wrapped materials at the end of the year
+-   Lets take some averages and see what makes a great playlist which I obviously have
+
+```{r}
+dance <- mean(data$Danceability, na.rm = TRUE)
+loud <- mean(data$Loudness, na.rm = TRUE)
+energy <- mean(data$Energy, na.rm = TRUE)
+speechiness <- mean(data$Speechiness, na.rm = TRUE)
+acoustic <- mean(data$Acousticness, na.rm = TRUE)
+instrumental <- mean(data$Instrumentalness, na.rm = TRUE)
+
+
+
+```
+
+## Constructing Analytics Barplot
+
+```{r}
+#| echo: true
+
+means_data <- data.frame(
+  Characteristic = c("Danceability", "Loudness", "Energy", "Speechiness", "Acousticness", "Instrumentalness"),
+  Mean = c(dance, loud, energy, speechiness, acoustic, instrumental)
+)
+
+```
+
+| Characteristics  | Averages    |
+|------------------|-------------|
+| Danceability     | 0.52427614  |
+| Loudness         | -7.15420963 |
+| Energy           | 0.72793411  |
+| Speechiness      | 0.09737453  |
+| Acousticness     | 0.16400645  |
+| Instrumentalness | 0.16562125  |
+
+## Graph of Most Important Qualaties
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+library(ggplot2)
+
+ggplot(means_data, aes(x = Characteristic, y = Mean, fill = Characteristic)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(title = "Mean Values of Song Characteristics",
+       x = "Characteristic",
+       y = "Mean") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+## Okay Seriously
+
+::: incremental
+-   Although this is a silly example, I leveraged many of Quarto's built in features
+    -   Code chunks with animations
+    -   Images and Text Formatting
+    -   Tables and Callout Windows
+-   Hopefully, this highlights how much you can do with this as a publishing platform if you want to present code and information clearly to an audience
+
+:::
+
+# Web Features
+
+## Shiny in Quarto
+
+-   Quarto has shiny projects integrated into its services
+
+-   This allows you to integrate shiny's interactive apps into documents the same way you can insert a code chunk in a standard quarto document
+
+    ![](images/clipboard-1265757118.png){fig-align="center" height=50% width = 80%}
+
+## Making a Website with Quarto
+
+::: incremental
+-   When you create a new project, you will have option to create a Quarto Website
+-   After naming it and choosing a directory, you have the option to automatically create a github repository, which will be important for publishing the website later
+-   This will automatically give you 6 items in your directory and an example that you can look at after you set up the github pages information
+:::
+
+## Making a Website with Quarto cont.
+
+::: incremental
+-   style.css
+    -   This is how you format your website, if you wanted to add more pages this is where you would do it
+-   index.qmd
+    -   The first page you'll see when you open the webpage, here you can alter it and and update it as you please
+-   about.qmd
+    -   This is a second page that highlights more examples
+    
+:::
+
+## Github Steps for Publishing
+
+::: incremental
+-   An important step for setting this up on Github pages is is creating a folder in your directory for important publishing docs
+-   Once you have connected your project to the Github repo, you can go to the Github Pages section in the settings of Github
+-   From there, you choose what branch to deploy from, and the folder for the publising docs, and after a quick refresh your webpage should be deployed
+:::
+
+## Conclusion
+
+-   Quarto can service almost all publushing needs whether its research, corporate, or just for fun
+-   Its wide ranging document formats, supported coding languages, and web capabilities means its quite versatile for whatever project you want to get out there
+-   Quarto is a must learn for data scientists who want to be able to share relevent information with people who don't understand the code as well as to those who do understand it
+
+## Sources
+-   <https://quarto.org/docs/presentations/>
+-   <https://quarto.org/docs/authoring/figures.html>
+-   <https://quarto.org/docs/presentations/revealjs/advanced.html>
+-   <https://quarto.org/>
+-   <https://quarto.org/docs/authoring/markdown-basics.html>
+-   <https://quarto.org/docs/guide/>
+
+------------------------------------------------------------------------

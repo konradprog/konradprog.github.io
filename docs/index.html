@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CapstoneQuarto - Capstone Quarto</title>
+<title>CapstoneQuarto - My Taste is Still Better than Yours</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -105,7 +139,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-power-of-quarto" id="toc-the-power-of-quarto" class="nav-link active" data-scroll-target="#the-power-of-quarto">The Power of Quarto</a></li>
+  <li><a href="#cleaning-data" id="toc-cleaning-data" class="nav-link active" data-scroll-target="#cleaning-data">Cleaning Data</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  <li><a href="#more-fun-facts-about-my-great-taste" id="toc-more-fun-facts-about-my-great-taste" class="nav-link" data-scroll-target="#more-fun-facts-about-my-great-taste">More Fun Facts About my Great Taste</a></li>
+  <li><a href="#spotify-analytics" id="toc-spotify-analytics" class="nav-link" data-scroll-target="#spotify-analytics">Spotify Analytics</a></li>
+  <li><a href="#constructing-analytics-barplot" id="toc-constructing-analytics-barplot" class="nav-link" data-scroll-target="#constructing-analytics-barplot">Constructing Analytics Barplot</a></li>
+  <li><a href="#graph-of-most-important-qualaties" id="toc-graph-of-most-important-qualaties" class="nav-link" data-scroll-target="#graph-of-most-important-qualaties">Graph of Most Important Qualaties</a></li>
   </ul>
 </nav>
     </div>
@@ -114,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Capstone Quarto</h1>
+<h1 class="title">My Taste is Still Better than Yours</h1>
 </div>
 
 
@@ -129,14 +169,254 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="the-power-of-quarto" class="level1">
-<h1>The Power of Quarto</h1>
-<p>Quarto is a very versatile publishing system that allows the users of it to:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2151445987.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'playlist.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="cleaning-data" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning-data">Cleaning Data</h2>
 <ul>
-<li><p>Make presentation</p></li>
-<li><p>Piss and Shit</p></li>
-<li><p>And even websites with the use of github pages</p></li>
+<li>We will remove the unnecessary columns to focus on Spotify’s analytics and details on the artists and songs</li>
 </ul>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">6</span>, <span class="dv">9</span>,<span class="dv">14</span>,<span class="dv">16</span>)]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>          Track.Name                Album.Name                   Artist.Name.s.
+1         Brianstorm Favourite Worst Nightmare                   Arctic Monkeys
+2 D Is For Dangerous Favourite Worst Nightmare                   Arctic Monkeys
+3    Altered Beast I    Murder of the Universe King Gizzard &amp; The Lizard Wizard
+4       Teddy Picker Favourite Worst Nightmare                   Arctic Monkeys
+5  Old Yellow Bricks Favourite Worst Nightmare                   Arctic Monkeys
+6         Is This It                Is This It                      The Strokes
+  Duration..ms. Popularity             Added.At
+1        170226          0 2017-11-14T20:35:49Z
+2        136106          0 2017-11-14T20:35:49Z
+3        143853         33 2021-10-13T20:58:21Z
+4        163173          0 2017-11-14T20:35:49Z
+5        191200          0 2017-11-14T20:35:49Z
+6        151333         61 2017-11-14T20:35:49Z
+                                                        Genres Danceability
+1  garage rock,modern rock,permanent wave,rock,sheffield indie        0.422
+2  garage rock,modern rock,permanent wave,rock,sheffield indie        0.555
+3  australian psych,double drumming,microtonal,neo-psychedelic        0.399
+4  garage rock,modern rock,permanent wave,rock,sheffield indie        0.631
+5  garage rock,modern rock,permanent wave,rock,sheffield indie        0.665
+6 alternative rock,garage rock,modern rock,permanent wave,rock        0.667
+  Energy Loudness Speechiness Acousticness Instrumentalness Liveness Valence
+1  0.983   -4.105      0.2260     7.75e-05         2.17e-03   0.2550   0.402
+2  0.926   -4.685      0.0370     9.78e-06         1.34e-04   0.0808   0.765
+3  0.915   -3.656      0.0956     3.28e-03         3.00e-02   0.4080   0.303
+4  0.975   -3.296      0.0974     3.72e-04         1.92e-04   0.0734   0.794
+5  0.840   -4.346      0.0693     1.70e-04         1.32e-05   0.0862   0.728
+6  0.692   -8.361      0.0285     1.47e-01         3.75e-05   0.3490   0.846
+    Tempo Time.Signature
+1 165.224              4
+2 145.044              4
+3 103.307              3
+4 150.236              4
+5 135.141              4
+6  96.022              4</code></pre>
+</div>
+</div>
+</section>
+<section id="section" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="section"></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.2.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>artist_counts <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Artist.Name.s.) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="section-1" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="section-1"></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>top_5_artists <span class="ot">&lt;-</span> <span class="fu">head</span>(artist_counts, <span class="dv">5</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(top_5_artists)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 2
+  Artist.Name.s.                   count
+  &lt;chr&gt;                            &lt;int&gt;
+1 King Gizzard &amp; The Lizard Wizard   130
+2 Arctic Monkeys                      54
+3 The Hives                           46
+4 The Strokes                         41
+5 IDLES                               39</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Some of these bands are too good! Listen at your own risk!</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Length Averages</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>aveLength <span class="ot">&lt;-</span> (<span class="fu">mean</span>(data<span class="sc">$</span>Duration..ms.) <span class="sc">/</span><span class="dv">1000</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>aveLength</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>longest_song <span class="ot">&lt;-</span>  <span class="fu">max</span>(data<span class="sc">$</span>Duration..ms., <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>longest_song<span class="sc">/</span><span class="dv">1000</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>max_index <span class="ot">&lt;-</span> <span class="fu">which.max</span>(data<span class="sc">$</span>Duration..ms.)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>max_row <span class="ot">&lt;-</span> data[max_index, ]</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(max_row)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>aveTemp <span class="ot">&lt;-</span> <span class="fu">mean</span>(data<span class="sc">$</span>Tempo,<span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>aveTemp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>genres_split <span class="ot">&lt;-</span> <span class="fu">strsplit</span>(data<span class="sc">$</span>Genres, <span class="at">split =</span> <span class="st">","</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>genres_vector <span class="ot">&lt;-</span> <span class="fu">unlist</span>(genres_split)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>genres_freq <span class="ot">&lt;-</span> <span class="fu">table</span>(genres_vector)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(genres_freq)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>sorted_genres <span class="ot">&lt;-</span> <span class="fu">sort</span>(genres_freq, <span class="at">decreasing =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>most_frequent_genre <span class="ot">&lt;-</span> <span class="fu">names</span>(sorted_genres)[<span class="dv">1</span>]</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(most_frequent_genre)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="more-fun-facts-about-my-great-taste" class="level2">
+<h2 class="anchored" data-anchor-id="more-fun-facts-about-my-great-taste">More Fun Facts About my Great Taste</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>The average song length on my playlist is 3 minutes and 38 seconds
+<ul class="incremental">
+<li>The longest song is 18 minutes and 18 seconds, The Dripping Tap by King Gizzard and the Lizard Wizard</li>
+</ul></li>
+<li>My most common genre is… drumroll please…
+<ul class="incremental">
+<li>Rock…</li>
+</ul></li>
+<li>Ignore that my average tempo is 125 bpm</li>
+</ul>
+</div>
+</section>
+<section id="spotify-analytics" class="level2">
+<h2 class="anchored" data-anchor-id="spotify-analytics">Spotify Analytics</h2>
+<ul>
+<li>Spotify tracks qualities of music and gives them a rating
+<ul>
+<li>Things like loudness, energy, danceability, etc.</li>
+</ul></li>
+<li>This is the data they use to create Spotify Wrapped materials at the end of the year</li>
+<li>Lets take some averages and see what makes a great playlist which I obviously have</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>dance <span class="ot">&lt;-</span> <span class="fu">mean</span>(data<span class="sc">$</span>Danceability, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>loud <span class="ot">&lt;-</span> <span class="fu">mean</span>(data<span class="sc">$</span>Loudness, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>energy <span class="ot">&lt;-</span> <span class="fu">mean</span>(data<span class="sc">$</span>Energy, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>speechiness <span class="ot">&lt;-</span> <span class="fu">mean</span>(data<span class="sc">$</span>Speechiness, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>acoustic <span class="ot">&lt;-</span> <span class="fu">mean</span>(data<span class="sc">$</span>Acousticness, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>instrumental <span class="ot">&lt;-</span> <span class="fu">mean</span>(data<span class="sc">$</span>Instrumentalness, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="constructing-analytics-barplot" class="level2">
+<h2 class="anchored" data-anchor-id="constructing-analytics-barplot">Constructing Analytics Barplot</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>means_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">Characteristic =</span> <span class="fu">c</span>(<span class="st">"Danceability"</span>, <span class="st">"Loudness"</span>, <span class="st">"Energy"</span>, <span class="st">"Speechiness"</span>, <span class="st">"Acousticness"</span>, <span class="st">"Instrumentalness"</span>),</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Mean =</span> <span class="fu">c</span>(dance, loud, energy, speechiness, acoustic, instrumental)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Characteristics</th>
+<th>Averages</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Danceability</td>
+<td>0.52427614</td>
+</tr>
+<tr class="even">
+<td>Loudness</td>
+<td>-7.15420963</td>
+</tr>
+<tr class="odd">
+<td>Energy</td>
+<td>0.72793411</td>
+</tr>
+<tr class="even">
+<td>Speechiness</td>
+<td>0.09737453</td>
+</tr>
+<tr class="odd">
+<td>Acousticness</td>
+<td>0.16400645</td>
+</tr>
+<tr class="even">
+<td>Instrumentalness</td>
+<td>0.16562125</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="graph-of-most-important-qualaties" class="level2">
+<h2 class="anchored" data-anchor-id="graph-of-most-important-qualaties">Graph of Most Important Qualaties</h2>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.2.3</code></pre>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(means_data, <span class="fu">aes</span>(<span class="at">x =</span> Characteristic, <span class="at">y =</span> Mean, <span class="at">fill =</span> Characteristic)) <span class="sc">+</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Mean Values of Song Characteristics"</span>,</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Characteristic"</span>,</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Mean"</span>) <span class="sc">+</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 <p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
 
 

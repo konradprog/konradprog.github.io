@@ -2,15 +2,645 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Capstone Quarto",
+    "title": "My Taste is Still Better than Yours",
     "section": "",
-    "text": "The Power of Quarto\nQuarto is a very versatile publishing system that allows the users of it to:\n\nMake presentation\nPiss and Shit\nAnd even websites with the use of github pages\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "data &lt;- read.csv('playlist.csv')"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1 + 1\n\n[1] 3"
+    "text": "Click here to open the presentation\n\n1 + 1 + 1\n\n[1] 3"
+  },
+  {
+    "objectID": "ShinyQuarto.html",
+    "href": "ShinyQuarto.html",
+    "title": "Quarto Shiny",
+    "section": "",
+    "text": "This Quarto document is made interactive using Shiny. Interactive documents allow readers to modify parameters and see the results immediately. Learn more about Shiny interactive documents at https://quarto.org/docs/interactive/shiny/."
+  },
+  {
+    "objectID": "ShinyQuarto.html#shiny-documents",
+    "href": "ShinyQuarto.html#shiny-documents",
+    "title": "Quarto Shiny",
+    "section": "",
+    "text": "This Quarto document is made interactive using Shiny. Interactive documents allow readers to modify parameters and see the results immediately. Learn more about Shiny interactive documents at https://quarto.org/docs/interactive/shiny/."
+  },
+  {
+    "objectID": "ShinyQuarto.html#inputs-and-outputs",
+    "href": "ShinyQuarto.html#inputs-and-outputs",
+    "title": "Quarto Shiny",
+    "section": "Inputs and Outputs",
+    "text": "Inputs and Outputs\nYou can embed Shiny inputs and outputs in your document. Outputs are automatically updated whenever inputs change. This demonstrates how a standard R plot can be made interactive:\n\n\n\nNumber of bins:"
+  },
+  {
+    "objectID": "Quarto Presentation.html#goals-of-quarto",
+    "href": "Quarto Presentation.html#goals-of-quarto",
+    "title": "Quarto Presentations",
+    "section": "Goals of Quarto",
+    "text": "Goals of Quarto\n\n\nQuarto is an open source publishing platform that allows users to create sleek presentations within R studio and other platforms\nThe aim was to create a publishing environment that made it simple to insert code, plots, etc.\nThis would help make presenting research and publications simpler with the aim of making it much easier to reproduce in order to further that research"
+  },
+  {
+    "objectID": "Quarto Presentation.html#options-for-presentation",
+    "href": "Quarto Presentation.html#options-for-presentation",
+    "title": "Quarto Presentations",
+    "section": "Options for Presentation",
+    "text": "Options for Presentation\n\n\nQuarto offers a wide variety of document and presentation formats as well as being versatile with projects and and project types\nQuarto utilizes many of the functionalities of R Markdown and puts them into a single consistent system that expands it support for programming languages"
+  },
+  {
+    "objectID": "Quarto Presentation.html#options-for-presentation-1",
+    "href": "Quarto Presentation.html#options-for-presentation-1",
+    "title": "Quarto Presentations",
+    "section": "Options for Presentation",
+    "text": "Options for Presentation"
+  },
+  {
+    "objectID": "Quarto Presentation.html#getting-started-1",
+    "href": "Quarto Presentation.html#getting-started-1",
+    "title": "Quarto Presentations",
+    "section": "Getting Started",
+    "text": "Getting Started\n\n\nOnce in RStudio, click the new file drop down and select Quarto Presentation or Document\nThis will bring up a window that allows you to name and pick the format you desire"
+  },
+  {
+    "objectID": "Quarto Presentation.html#getting-started-cont.",
+    "href": "Quarto Presentation.html#getting-started-cont.",
+    "title": "Quarto Presentations",
+    "section": "Getting Started cont.",
+    "text": "Getting Started cont.\n\nYour document will start with some formatting options at the top\nThis allows the user to choose the theme and the title and other information if required (date, output format, etc.)"
+  },
+  {
+    "objectID": "Quarto Presentation.html#editing-options",
+    "href": "Quarto Presentation.html#editing-options",
+    "title": "Quarto Presentations",
+    "section": "Editing Options",
+    "text": "Editing Options\n\n\nMarkdown is not only for data scientists, it has options that it make it much simpler to use than a software like latex\nThis is due to the editor options\n\nSource: Code editor where the format follows the normal Rmarkdown editor style\nVisual: An editor that operates a little more like a Microsoft Product with more built in features for people unfamiliar with RStudio/RMarkdown"
+  },
+  {
+    "objectID": "Quarto Presentation.html#editing-options-cont.",
+    "href": "Quarto Presentation.html#editing-options-cont.",
+    "title": "Quarto Presentations",
+    "section": "Editing Options Cont.",
+    "text": "Editing Options Cont.\n\n\nThe visual editor simplifies the look and feel of the editing, making screen shots easy to paste and being able to switch text options with the toolbar at the top\nThe visual editor also has all the same code chunk abilities in case a data scientists hopes to simplify the presentation aspects but still wants to add code\nAdds to the flexibility of the publishing platform’"
+  },
+  {
+    "objectID": "Quarto Presentation.html#text-in-quarto",
+    "href": "Quarto Presentation.html#text-in-quarto",
+    "title": "Quarto Presentations",
+    "section": "Text in Quarto",
+    "text": "Text in Quarto\n\n\nQuarto has different header options that in the source editor you can alter by the amount of # you put in front of the text\nBullet points are marked with a dash before entering your text\n\nTwo tabs and dash will give you sub-points to attach texts"
+  },
+  {
+    "objectID": "Quarto Presentation.html#images-in-quarto",
+    "href": "Quarto Presentation.html#images-in-quarto",
+    "title": "Quarto Presentations",
+    "section": "Images in Quarto",
+    "text": "Images in Quarto\n\n\nWhen in the source editor, you can add images into the presentation by defining the path\nYou can alter its placement in the slide and its size with brackets after defining the path\nThe format for entering an image is [*path]{}"
+  },
+  {
+    "objectID": "Quarto Presentation.html#animations",
+    "href": "Quarto Presentation.html#animations",
+    "title": "Quarto Presentations",
+    "section": "Animations",
+    "text": "Animations\n\nQuarto offers built animations for text, image, and code chunks\nYou can also animate between slides with {auto-animate}\nWhen is source mode, slides can be formatted between chunks starting and ending with ‘:::’"
+  },
+  {
+    "objectID": "Quarto Presentation.html#code-chunks-in-quarto",
+    "href": "Quarto Presentation.html#code-chunks-in-quarto",
+    "title": "Quarto Presentations",
+    "section": "Code Chunks in Quarto",
+    "text": "Code Chunks in Quarto\n\n\nThe main advantage of Quarto to other presentation formats is having interactive code chunks within a document\nThe user can also alter the settings in case they just want the output to be visible and not the code itself\nQuarto has support for up to 140 langauges and even if it doesn’t support it you can establish the code and at least display the code for your audience"
+  },
+  {
+    "objectID": "Quarto Presentation.html#code-chunks-in-quarto-examples",
+    "href": "Quarto Presentation.html#code-chunks-in-quarto-examples",
+    "title": "Quarto Presentations",
+    "section": "Code Chunks in Quarto examples",
+    "text": "Code Chunks in Quarto examples\n\nlibrary(ggplot2)\n\nmpg &lt;- mtcars\nggplot(mpg, aes(disp, hp, color = mpg)) +\n  geom_smooth(method = 'lm') + \n  geom_point()"
+  },
+  {
+    "objectID": "Quarto Presentation.html#code-chunk-configuration",
+    "href": "Quarto Presentation.html#code-chunk-configuration",
+    "title": "Quarto Presentations",
+    "section": "Code Chunk Configuration",
+    "text": "Code Chunk Configuration\n\n\n#| include:\n\nPrevents code and results from appearing but still runs it\n\n#| echo:\n\nShows results but not the code\n\n#| message:\n\nwill hide messages if set to false"
+  },
+  {
+    "objectID": "Quarto Presentation.html#code-chunk-cont.",
+    "href": "Quarto Presentation.html#code-chunk-cont.",
+    "title": "Quarto Presentations",
+    "section": "Code Chunk cont.",
+    "text": "Code Chunk cont.\n\n\n#| warning:\n\nWill hide any code warning if option set to false\n\n#| fig.cap:\n\nAdds a caption if graphics are involved\n\n#| code-fold:\n\nIf you put this at the top of the codes formatting options, will have code operate as a drop down"
+  },
+  {
+    "objectID": "Quarto Presentation.html#extra-formatting-tricks",
+    "href": "Quarto Presentation.html#extra-formatting-tricks",
+    "title": "Quarto Presentations",
+    "section": "Extra Formatting Tricks",
+    "text": "Extra Formatting Tricks\n\n\nYou can Bold and Italicize and even Bold Italicize based on the number of asterisks put you surround the text int.\n\nBold: 2, Ital: 1, Bold Ital: 3\n\nSubscript and Superscript can be done with ^^ ~~\n\n22 or a2\n\nMath equations can be manually put in when between dollar signs dollar signs\n\n\\[ y = mx + b  \\]\n\\(y = mx + b\\)"
+  },
+  {
+    "objectID": "Quarto Presentation.html#extra-formatting-tricks-cont.",
+    "href": "Quarto Presentation.html#extra-formatting-tricks-cont.",
+    "title": "Quarto Presentations",
+    "section": "Extra Formatting Tricks cont.",
+    "text": "Extra Formatting Tricks cont.\n\n\nYou can make custom tables by hand in Quarto marking coulmns with a stack of | and below the titles of each column running dashes under column title\nYou can then format where the text goes in the heading with colons\n\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+  },
+  {
+    "objectID": "Quarto Presentation.html#extra-formatting-tricks-cont.-1",
+    "href": "Quarto Presentation.html#extra-formatting-tricks-cont.-1",
+    "title": "Quarto Presentations",
+    "section": "Extra Formatting Tricks cont.",
+    "text": "Extra Formatting Tricks cont.\n\nYou can make flowcharts right inside Quarto using mermaid, label a codechunk with mermaid and you’ll be able to make it\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Use Quarto?}\n  C --&gt; D[Yes]\n  C --&gt; E[YES]\n\n\n\n\n\n\n\nQuarto supports Mermaid and Graphiz for all of your diagram needs\nFind out more here https://quarto.org/docs/authoring/diagrams.html"
+  },
+  {
+    "objectID": "Quarto Presentation.html#extra-formatting-tricks-cont.-2",
+    "href": "Quarto Presentation.html#extra-formatting-tricks-cont.-2",
+    "title": "Quarto Presentations",
+    "section": "Extra Formatting Tricks cont.",
+    "text": "Extra Formatting Tricks cont.\n\nYou can create callout blocks that can act as warnings or notes for a reader to take note of as they read\n\n\n\n\n\n\n\nNote\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and `important’\n\n\n\n\n\n\n\n\n\nWarning\n\n\nQuarto is pretty lit!"
+  },
+  {
+    "objectID": "Quarto Presentation.html#shiny-in-quarto",
+    "href": "Quarto Presentation.html#shiny-in-quarto",
+    "title": "Quarto Presentations",
+    "section": "Shiny in Quarto",
+    "text": "Shiny in Quarto\n\nQuarto has shiny projects integrated into its services\nThis allows you to integrate shiny’s interactive apps into documents the same way you can insert a code chunk in a standard quarto document\n{fig-align=“center” height=50% width = 80%}"
+  },
+  {
+    "objectID": "Quarto Presentation.html#making-a-website-with-quarto",
+    "href": "Quarto Presentation.html#making-a-website-with-quarto",
+    "title": "Quarto Presentations",
+    "section": "Making a Website with Quarto",
+    "text": "Making a Website with Quarto\n\n\nWhen you create a new project, you will have option to create a Quarto Website\nAfter naming it and choosing a directory, you have the option to automatically create a github repository, which will be important for publishing the website later\nThis will automatically give you 6 items in your directory and an example that you can look at after you set up the github pages information"
+  },
+  {
+    "objectID": "Quarto Presentation.html#making-a-website-with-quarto-cont.",
+    "href": "Quarto Presentation.html#making-a-website-with-quarto-cont.",
+    "title": "Quarto Presentations",
+    "section": "Making a Website with Quarto cont.",
+    "text": "Making a Website with Quarto cont.\n\n\nstyle.css\n\nThis is how you format your website, if you wanted to add more pages this is where you would do it\n\nindex.qmd\n\nThe first page you’ll see when you open the webpage, here you can alter it and and update it as you please\n\nabout.qmd\n\nThis is a second page that highlights more examples"
+  },
+  {
+    "objectID": "Quarto Presentation.html#github-steps-for-publishing",
+    "href": "Quarto Presentation.html#github-steps-for-publishing",
+    "title": "Quarto Presentations",
+    "section": "Github Steps for Publishing",
+    "text": "Github Steps for Publishing\n\n\nAn important step for setting this up on Github pages is is creating a folder in your directory for important publishing docs\nOnce you have connected your project to the Github repo, you can go to the Github Pages section in the settings of Github\nFrom there, you choose what branch to deploy from, and the folder for the publising docs, and after a quick refresh your webpage should be deployed"
+  },
+  {
+    "objectID": "Quarto Presentation.html#auto-animate-true",
+    "href": "Quarto Presentation.html#auto-animate-true",
+    "title": "Quarto Presentations",
+    "section": "{auto-animate = true}",
+    "text": "{auto-animate = true}\n\nExample Presentation"
+  },
+  {
+    "objectID": "Quarto Presentation.html#most",
+    "href": "Quarto Presentation.html#most",
+    "title": "Quarto Presentations",
+    "section": "Most",
+    "text": "Most\nPopular\nMovies\nThanks\nKaggle"
+  },
+  {
+    "objectID": "Quarto Presentation.html#section",
+    "href": "Quarto Presentation.html#section",
+    "title": "Quarto Presentations",
+    "section": "",
+    "text": "Example Presentation"
+  },
+  {
+    "objectID": "Quarto Presentation.html#section-1",
+    "href": "Quarto Presentation.html#section-1",
+    "title": "Quarto Presentations",
+    "section": "",
+    "text": "My Music Taste is Better Than Yours"
+  },
+  {
+    "objectID": "Quarto Presentation.html#netflix-data",
+    "href": "Quarto Presentation.html#netflix-data",
+    "title": "Quarto Presentations",
+    "section": "Netflix Data",
+    "text": "Netflix Data\n\nThis data is from Kaggle and was collected from LetterBoxd and shows the top rated movies from Netflix\nWe will clean the dataset of NA and null values and only be using the columns movie_title, popularity, genre, language, and release date,\nI’m loading the data in this slide but behind the scenes\n\n\n\n                      X_id                genres\n1 5fc85f606758f69634496fd3 [\"Music\",\"Animation\"]\n2 5fc85ff26758f696344ace0c                    []\n3 5fc85f606758f69634496fcd             [\"Drama\"]\n4 5fc85f606758f69634496fd1             [\"Drama\"]\n5 5fc85f606758f69634496fd4       [\"Documentary\"]\n6 5fc85ff26758f696344ace3a           [\"Romance\"]\n                                                             image_url\n1      film-poster/4/6/4/4/4/0/464440-football-freaks-0-230-0-345-crop\n2            film-poster/2/4/5/5/0/0/245500-aftermath-0-230-0-345-crop\n3 film-poster/9/3/3/1/8/93318-where-chimneys-are-seen-0-230-0-345-crop\n4                                                                     \n5 film-poster/4/5/4/6/0/3/454603-50-years-of-fabulous-0-230-0-345-crop\n6     film-poster/5/6/1/5/2/56152-where-love-has-gone-0-230-0-345-crop\n    imdb_id                                       imdb_link\n1                                                          \n2 tt0586129 http://www.imdb.com/title/tt0586129/maindetails\n3 tt0045731 http://www.imdb.com/title/tt0045731/maindetails\n4 tt0187327 http://www.imdb.com/title/tt0187327/maindetails\n5 tt4769914 http://www.imdb.com/title/tt4769914/maindetails\n6 tt0058745 http://www.imdb.com/title/tt0058745/maindetails\n                 movie_id             movie_title original_language\n1         football-freaks         Football Freaks                en\n2          aftermath-1960               Aftermath                en\n3 where-chimneys-are-seen Where Chimneys Are Seen                ja\n4  the-musicians-daughter The Musician's Daughter                en\n5    50-years-of-fabulous    50 Years of Fabulous                en\n6     where-love-has-gone     Where Love Has Gone                en\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  overview\n1                                                                                               Football crazy, football mad. Don’t watch this off-beat jukebox cartoon expecting any conventional soccer action. Equal parts Disney, Dali and Duchamp, this abstract mix of black and white photos and alternative comix style animation is accompanied by a medley of doo-wop classics and documentary soundbites.  The film is certainly an extreme departure for those familiar with the more conventional output of the Halas & Batchelor studio, best known for their feature-length version of George Orwell’s Animal Farm (1954). Paul Vester was one of a number of sixties art school graduates that brought a mix of pop art and illustration influences to the company whilst it was undergoing a brief change in its ownership. As a warning, in keeping with its progressive, adult style there is some brief nudity at the end of the film.\n2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Aftermath was the pilot for an unsold TV series called The Code of Jonathan West; it aired as part of The General Electric Theater. The film takes place just after the Civil War, in a small southern town – war-ravaged, impoverished, and seething with hatred and resentment.\n3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Gosho’s most celebrated film both in Japan and the West, Where Chimneys Are Seen is perhaps the most compelling example of his concern for, and insights into, the everyday lives of lower-middle-class people. Based on Rinzo Shiina’s novel of the absurd, the film depicts the lives of two couples against the backdrop of Tokyo’s growing industrialization during the 1950s.\n4                                                  Carl Wagner's good wife was dying. His heart bled at the thought of losing her, his life-long loyal helpmate. And his opera was almost completed, after spending months of weary hours to make it perfect. A pretty daughter tried in vain to brighten the overhanging gloom. Finally the composer, after a superhuman effort, and with a soul filled with sorrow, finished the last act of his score and hurried away to the impresario for a hearing. Here he was assured of an immediate reading and the return to his humble tenement was made with a much lighter heart. The doctor paid another visit to his patient and left a prescription to be filled. Carl reached home and realized how much depended upon the medicine ordered to possibly save a life most dear. Taking his cherished violin, the only article of value remaining, he rushed off to the pawnbroker and negotiated a loan.\n5 50 Years of Fabulous recounts the rich history of the Imperial Council, the oldest LGBT charity organization in the world. Founded in San Francisco by renown activist, drag queen and performer Jose Sarria, the Council has helped shaped LGBT life and social history in San Francisco and beyond throughout the last five decades. Sarria was also the first openly gay man to run for political office in the United States in 1961.  From its genesis as a critical public space for the community and capacity building of LGBT San Franciscans, to its vital role in the advocacy for LGBT human rights, 50 YEARS OF FABULOUS documents the full scope of the organization’s historical evolution up to its contemporary struggle in finding relevance -- both in the wake of social progress it has helped foster, and in light of a newly empowered political coalition committed to rolling back a half-century of civil rights achievements.\n6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               A divorced couple's teen-age daughter stands trial for stabbing her mother's latest lover.\n  popularity         production_countries release_date runtime spoken_languages\n1        0.6           [\"United Kingdom\"]   1971-12-05       0               []\n2        0.6                           []   1960-04-17      22               []\n3      1.568                    [\"Japan\"]   1953-03-05     108       [\"日本語\"]\n4        0.6 [\"United States of America\"]   1911-12-12      15               []\n5        0.6                           []   2018-05-17      75               []\n6      2.304 [\"United States of America\"]   1964-11-02     111      [\"English\"]\n  tmdb_id                                tmdb_link vote_average vote_count\n1  535272 https://www.themoviedb.org/movie/535272/            0          0\n2  318331 https://www.themoviedb.org/movie/318331/            8          1\n3  117779 https://www.themoviedb.org/movie/117779/          6.6         10\n4  560377 https://www.themoviedb.org/movie/560377/            0          0\n5  525187 https://www.themoviedb.org/movie/525187/            0          0\n6   73348  https://www.themoviedb.org/movie/73348/          6.1         11\n  year_released\n1          1971\n2          1960\n3          1953\n4          1911\n5          2018\n6          1964"
+  },
+  {
+    "objectID": "Quarto Presentation.html#netflix-popularity",
+    "href": "Quarto Presentation.html#netflix-popularity",
+    "title": "Quarto Presentations",
+    "section": "Netflix Popularity",
+    "text": "Netflix Popularity\n\nSpotify has become one of the top streaming platforms after being created in 2008\nI personally use it to like better music than you like\nYou can actually find your playlist data online and export it"
+  },
+  {
+    "objectID": "Quarto Presentation.html#cleanign-data",
+    "href": "Quarto Presentation.html#cleanign-data",
+    "title": "Quarto Presentations",
+    "section": "Cleanign Data",
+    "text": "Cleanign Data\n\nWe will remove the Na’s and remove the unecessay columns\n\n\n\nCode\ndata &lt;- data[-c(1, 3,4,5,6,9,11, 12, 13, 14, 15, 16, 17, 18)]\ndata &lt;- na.omit(data)\n\nhead(data)\n\n\n                 genres             movie_title original_language popularity\n1 [\"Music\",\"Animation\"]         Football Freaks                en        0.6\n2                    []               Aftermath                en        0.6\n3             [\"Drama\"] Where Chimneys Are Seen                ja      1.568\n4             [\"Drama\"] The Musician's Daughter                en        0.6\n5       [\"Documentary\"]    50 Years of Fabulous                en        0.6\n6           [\"Romance\"]     Where Love Has Gone                en      2.304\n  year_released\n1          1971\n2          1960\n3          1953\n4          1911\n5          2018\n6          1964"
+  },
+  {
+    "objectID": "Quarto Presentation.html#cleaning-data",
+    "href": "Quarto Presentation.html#cleaning-data",
+    "title": "Quarto Presentations",
+    "section": "Cleaning Data",
+    "text": "Cleaning Data\n\nWe will remove the unnecessary columns to focus on Spotify’s analytics and details on the artists and songs\n\n\n\nCode\ndata &lt;- data[-c(1,2,6, 9,14,16)]\n\nhead(data)\n\n\n          Track.Name                Album.Name                   Artist.Name.s.\n1         Brianstorm Favourite Worst Nightmare                   Arctic Monkeys\n2 D Is For Dangerous Favourite Worst Nightmare                   Arctic Monkeys\n3    Altered Beast I    Murder of the Universe King Gizzard & The Lizard Wizard\n4       Teddy Picker Favourite Worst Nightmare                   Arctic Monkeys\n5  Old Yellow Bricks Favourite Worst Nightmare                   Arctic Monkeys\n6         Is This It                Is This It                      The Strokes\n  Duration..ms. Popularity             Added.At\n1        170226          0 2017-11-14T20:35:49Z\n2        136106          0 2017-11-14T20:35:49Z\n3        143853         33 2021-10-13T20:58:21Z\n4        163173          0 2017-11-14T20:35:49Z\n5        191200          0 2017-11-14T20:35:49Z\n6        151333         61 2017-11-14T20:35:49Z\n                                                        Genres Danceability\n1  garage rock,modern rock,permanent wave,rock,sheffield indie        0.422\n2  garage rock,modern rock,permanent wave,rock,sheffield indie        0.555\n3  australian psych,double drumming,microtonal,neo-psychedelic        0.399\n4  garage rock,modern rock,permanent wave,rock,sheffield indie        0.631\n5  garage rock,modern rock,permanent wave,rock,sheffield indie        0.665\n6 alternative rock,garage rock,modern rock,permanent wave,rock        0.667\n  Energy Loudness Speechiness Acousticness Instrumentalness Liveness Valence\n1  0.983   -4.105      0.2260     7.75e-05         2.17e-03   0.2550   0.402\n2  0.926   -4.685      0.0370     9.78e-06         1.34e-04   0.0808   0.765\n3  0.915   -3.656      0.0956     3.28e-03         3.00e-02   0.4080   0.303\n4  0.975   -3.296      0.0974     3.72e-04         1.92e-04   0.0734   0.794\n5  0.840   -4.346      0.0693     1.70e-04         1.32e-05   0.0862   0.728\n6  0.692   -8.361      0.0285     1.47e-01         3.75e-05   0.3490   0.846\n    Tempo Time.Signature\n1 165.224              4\n2 145.044              4\n3 103.307              3\n4 150.236              4\n5 135.141              4\n6  96.022              4"
+  },
+  {
+    "objectID": "Quarto Presentation.html#spotify-data",
+    "href": "Quarto Presentation.html#spotify-data",
+    "title": "Quarto Presentations",
+    "section": "Spotify Data",
+    "text": "Spotify Data\n\nThis data is from Exportify where you can turn your playlist into a csv and look through the data\nWe will remove some columns that are not necessary or less interesting and get to the bottom of why I have the best taste possibly of all time\nI’m loading the data in this slide but behind the scenes"
+  },
+  {
+    "objectID": "Quarto Presentation.html#top-5",
+    "href": "Quarto Presentation.html#top-5",
+    "title": "Quarto Presentations",
+    "section": "Top 5",
+    "text": "Top 5"
+  },
+  {
+    "objectID": "Quarto Presentation.html#section-3",
+    "href": "Quarto Presentation.html#section-3",
+    "title": "Quarto Presentations",
+    "section": "",
+    "text": "top_5_artists &lt;- head(artist_counts, 5)\n\nprint(top_5_artists)\n\n# A tibble: 5 × 2\n  Artist.Name.s.                   count\n  &lt;chr&gt;                            &lt;int&gt;\n1 King Gizzard & The Lizard Wizard   130\n2 Arctic Monkeys                      54\n3 The Hives                           46\n4 The Strokes                         41\n5 IDLES                               39\n\n\n\n\n\n\n\n\nWarning\n\n\nSome of these bands are too good! Listen at your own risk!"
+  },
+  {
+    "objectID": "Quarto Presentation.html#section-2",
+    "href": "Quarto Presentation.html#section-2",
+    "title": "Quarto Presentations",
+    "section": "",
+    "text": "library(dplyr)\nartist_counts &lt;- data %&gt;%\n  group_by(Artist.Name.s.) %&gt;%\n  summarise(count = n()) %&gt;%\n  arrange(desc(count))"
+  },
+  {
+    "objectID": "Quarto Presentation.html#spotify-analytics",
+    "href": "Quarto Presentation.html#spotify-analytics",
+    "title": "Quarto Presentations",
+    "section": "Spotify Analytics",
+    "text": "Spotify Analytics\n\nSpotify tracks qualities of music and gives them a rating\n\nThings like loudness, energy, danceability, etc.\n\nThis is the data they use to create Spotify Wrapped materials at the end of the year\nLets take some averages and see what makes a great playlist which I obviously have"
+  },
+  {
+    "objectID": "Quarto Presentation.html#constructing-analytics-barplot",
+    "href": "Quarto Presentation.html#constructing-analytics-barplot",
+    "title": "Quarto Presentations",
+    "section": "Constructing Analytics Barplot",
+    "text": "Constructing Analytics Barplot\n\nmeans_data &lt;- data.frame(\n  Characteristic = c(\"Danceability\", \"Loudness\", \"Energy\", \"Speechiness\", \"Acousticness\", \"Instrumentalness\"),\n  Mean = c(dance, loud, energy, speechiness, acoustic, instrumental)\n)\n\n\n\n\nCharacteristics\nAverages\n\n\n\n\nDanceability\n0.52427614\n\n\nLoudness\n-7.15420963\n\n\nEnergy\n0.72793411\n\n\nSpeechiness\n0.09737453\n\n\nAcousticness\n0.16400645\n\n\nInstrumentalness\n0.16562125"
+  },
+  {
+    "objectID": "Quarto Presentation.html#section-4",
+    "href": "Quarto Presentation.html#section-4",
+    "title": "Quarto Presentations",
+    "section": "",
+    "text": "Characteristic        Mean\n1     Danceability  0.52427614\n2         Loudness -7.15420963\n3           Energy  0.72793411\n4      Speechiness  0.09737453\n5     Acousticness  0.16400645\n6 Instrumentalness  0.16562125\n\n\n::: ## {auto-animate=“true”}"
+  },
+  {
+    "objectID": "Quarto Presentation.html#more-fun-facts-about-my-great-taste",
+    "href": "Quarto Presentation.html#more-fun-facts-about-my-great-taste",
+    "title": "Quarto Presentations",
+    "section": "More Fun Facts About my Great Taste",
+    "text": "More Fun Facts About my Great Taste\n\n\nThe average song length on my playlist is 3 minutes and 38 seconds\n\nThe longest song is 18 minutes and 18 seconds, The Dripping Tap by King Gizzard and the Lizard Wizard\n\nMy most common genre is… drumroll please…\n\nRock…\n\nIgnore that my average tempo is 125 bpm"
+  },
+  {
+    "objectID": "Quarto Presentation.html#okay-seriously",
+    "href": "Quarto Presentation.html#okay-seriously",
+    "title": "Quarto Presentations",
+    "section": "Okay Seriously",
+    "text": "Okay Seriously\n\n\nAlthough this is a silly example, I leveraged many of Quarto’s built in features\n\nCode chunks with animations\nImages and Text Formatting\nTables and Callout Windows\n\nHopefully, this highlights how much you can do with this as a publishing platform if you want to present code and information clearly to an audience"
+  },
+  {
+    "objectID": "Quarto Presentation.html#spotify",
+    "href": "Quarto Presentation.html#spotify",
+    "title": "Quarto Presentations",
+    "section": "Spotify",
+    "text": "Spotify\n\nSpotify has become one of the top streaming platforms after being created in 2008\nI personally use it to listen to better music than you like\nYou can actually find your playlist data online and export it"
+  },
+  {
+    "objectID": "Quarto Presentation.html#conclusion",
+    "href": "Quarto Presentation.html#conclusion",
+    "title": "Quarto Presentations",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nQuarto can service almost all publushing needs whether its research, corporate, or just for fun\nIts wide ranging document formats, supported coding languages, and web capabilities means its quite versatile for whatever project you want to get out there\nQuarto is a must learn for data scientists who want to be able to share relevent information with people who don’t understand the code as well as to those who do understand it"
+  },
+  {
+    "objectID": "Quarto Presentation.html#sources",
+    "href": "Quarto Presentation.html#sources",
+    "title": "Quarto Presentations",
+    "section": "Sources",
+    "text": "Sources\n\nhttps://quarto.org/docs/presentations/\nhttps://quarto.org/docs/authoring/figures.html\nhttps://quarto.org/docs/presentations/revealjs/advanced.html\nhttps://quarto.org/\nhttps://quarto.org/docs/authoring/markdown-basics.html\nhttps://quarto.org/docs/guide/"
+  },
+  {
+    "objectID": "Quarto Presentation.html#graph-of-most-important-qualaties",
+    "href": "Quarto Presentation.html#graph-of-most-important-qualaties",
+    "title": "Quarto Presentations",
+    "section": "Graph of Most Important Qualaties",
+    "text": "Graph of Most Important Qualaties\n\n\nCode\nlibrary(ggplot2)\n\nggplot(means_data, aes(x = Characteristic, y = Mean, fill = Characteristic)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal() +\n  labs(title = \"Mean Values of Song Characteristics\",\n       x = \"Characteristic\",\n       y = \"Mean\") +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))"
+  },
+  {
+    "objectID": "index.html#taste",
+    "href": "index.html#taste",
+    "title": "Capstone Quarto",
+    "section": "",
+    "text": "data &lt;- read.csv('playlist.csv')"
+  },
+  {
+    "objectID": "index.html#cleaning-data",
+    "href": "index.html#cleaning-data",
+    "title": "My Taste is Still Better than Yours",
+    "section": "Cleaning Data",
+    "text": "Cleaning Data\n\nWe will remove the unnecessary columns to focus on Spotify’s analytics and details on the artists and songs\n\n\n\nCode\ndata &lt;- data[-c(1,2,6, 9,14,16)]\n\nhead(data)\n\n\n          Track.Name                Album.Name                   Artist.Name.s.\n1         Brianstorm Favourite Worst Nightmare                   Arctic Monkeys\n2 D Is For Dangerous Favourite Worst Nightmare                   Arctic Monkeys\n3    Altered Beast I    Murder of the Universe King Gizzard & The Lizard Wizard\n4       Teddy Picker Favourite Worst Nightmare                   Arctic Monkeys\n5  Old Yellow Bricks Favourite Worst Nightmare                   Arctic Monkeys\n6         Is This It                Is This It                      The Strokes\n  Duration..ms. Popularity             Added.At\n1        170226          0 2017-11-14T20:35:49Z\n2        136106          0 2017-11-14T20:35:49Z\n3        143853         33 2021-10-13T20:58:21Z\n4        163173          0 2017-11-14T20:35:49Z\n5        191200          0 2017-11-14T20:35:49Z\n6        151333         61 2017-11-14T20:35:49Z\n                                                        Genres Danceability\n1  garage rock,modern rock,permanent wave,rock,sheffield indie        0.422\n2  garage rock,modern rock,permanent wave,rock,sheffield indie        0.555\n3  australian psych,double drumming,microtonal,neo-psychedelic        0.399\n4  garage rock,modern rock,permanent wave,rock,sheffield indie        0.631\n5  garage rock,modern rock,permanent wave,rock,sheffield indie        0.665\n6 alternative rock,garage rock,modern rock,permanent wave,rock        0.667\n  Energy Loudness Speechiness Acousticness Instrumentalness Liveness Valence\n1  0.983   -4.105      0.2260     7.75e-05         2.17e-03   0.2550   0.402\n2  0.926   -4.685      0.0370     9.78e-06         1.34e-04   0.0808   0.765\n3  0.915   -3.656      0.0956     3.28e-03         3.00e-02   0.4080   0.303\n4  0.975   -3.296      0.0974     3.72e-04         1.92e-04   0.0734   0.794\n5  0.840   -4.346      0.0693     1.70e-04         1.32e-05   0.0862   0.728\n6  0.692   -8.361      0.0285     1.47e-01         3.75e-05   0.3490   0.846\n    Tempo Time.Signature\n1 165.224              4\n2 145.044              4\n3 103.307              3\n4 150.236              4\n5 135.141              4\n6  96.022              4"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "My Taste is Still Better than Yours",
+    "section": "",
+    "text": "library(dplyr)\n\nWarning: package 'dplyr' was built under R version 4.2.3\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nartist_counts &lt;- data %&gt;%\n  group_by(Artist.Name.s.) %&gt;%\n  summarise(count = n()) %&gt;%\n  arrange(desc(count))"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "My Taste is Still Better than Yours",
+    "section": "",
+    "text": "top_5_artists &lt;- head(artist_counts, 5)\n\nprint(top_5_artists)\n\n# A tibble: 5 × 2\n  Artist.Name.s.                   count\n  &lt;chr&gt;                            &lt;int&gt;\n1 King Gizzard & The Lizard Wizard   130\n2 Arctic Monkeys                      54\n3 The Hives                           46\n4 The Strokes                         41\n5 IDLES                               39\n\n\n\n\n\n\n\n\nWarning\n\n\n\nSome of these bands are too good! Listen at your own risk!\n\n\n\n# Length Averages\n#| echo: false\naveLength &lt;- (mean(data$Duration..ms.) /1000)\naveLength\n\nlongest_song &lt;-  max(data$Duration..ms., na.rm = TRUE)\nlongest_song/1000\nmax_index &lt;- which.max(data$Duration..ms.)\nmax_row &lt;- data[max_index, ]\nprint(max_row)\n\naveTemp &lt;- mean(data$Tempo,na.rm = TRUE)\n\naveTemp\n\n\n#| echo: false\n\ngenres_split &lt;- strsplit(data$Genres, split = \",\")\ngenres_vector &lt;- unlist(genres_split)\ngenres_freq &lt;- table(genres_vector)\nprint(genres_freq)\nsorted_genres &lt;- sort(genres_freq, decreasing = TRUE)\nmost_frequent_genre &lt;- names(sorted_genres)[1]\n\n\nprint(most_frequent_genre)"
+  },
+  {
+    "objectID": "index.html#more-fun-facts-about-my-great-taste",
+    "href": "index.html#more-fun-facts-about-my-great-taste",
+    "title": "My Taste is Still Better than Yours",
+    "section": "More Fun Facts About my Great Taste",
+    "text": "More Fun Facts About my Great Taste\n\n\nThe average song length on my playlist is 3 minutes and 38 seconds\n\nThe longest song is 18 minutes and 18 seconds, The Dripping Tap by King Gizzard and the Lizard Wizard\n\nMy most common genre is… drumroll please…\n\nRock…\n\nIgnore that my average tempo is 125 bpm"
+  },
+  {
+    "objectID": "index.html#spotify-analytics",
+    "href": "index.html#spotify-analytics",
+    "title": "My Taste is Still Better than Yours",
+    "section": "Spotify Analytics",
+    "text": "Spotify Analytics\n\nSpotify tracks qualities of music and gives them a rating\n\nThings like loudness, energy, danceability, etc.\n\nThis is the data they use to create Spotify Wrapped materials at the end of the year\nLets take some averages and see what makes a great playlist which I obviously have\n\n\ndance &lt;- mean(data$Danceability, na.rm = TRUE)\nloud &lt;- mean(data$Loudness, na.rm = TRUE)\nenergy &lt;- mean(data$Energy, na.rm = TRUE)\nspeechiness &lt;- mean(data$Speechiness, na.rm = TRUE)\nacoustic &lt;- mean(data$Acousticness, na.rm = TRUE)\ninstrumental &lt;- mean(data$Instrumentalness, na.rm = TRUE)"
+  },
+  {
+    "objectID": "index.html#constructing-analytics-barplot",
+    "href": "index.html#constructing-analytics-barplot",
+    "title": "My Taste is Still Better than Yours",
+    "section": "Constructing Analytics Barplot",
+    "text": "Constructing Analytics Barplot\n\nmeans_data &lt;- data.frame(\n  Characteristic = c(\"Danceability\", \"Loudness\", \"Energy\", \"Speechiness\", \"Acousticness\", \"Instrumentalness\"),\n  Mean = c(dance, loud, energy, speechiness, acoustic, instrumental)\n)\n\n\n\n\nCharacteristics\nAverages\n\n\n\n\nDanceability\n0.52427614\n\n\nLoudness\n-7.15420963\n\n\nEnergy\n0.72793411\n\n\nSpeechiness\n0.09737453\n\n\nAcousticness\n0.16400645\n\n\nInstrumentalness\n0.16562125"
+  },
+  {
+    "objectID": "index.html#graph-of-most-important-qualaties",
+    "href": "index.html#graph-of-most-important-qualaties",
+    "title": "My Taste is Still Better than Yours",
+    "section": "Graph of Most Important Qualaties",
+    "text": "Graph of Most Important Qualaties\n\n\nCode\nlibrary(ggplot2)\n\n\nWarning: package 'ggplot2' was built under R version 4.2.3\n\n\nCode\nggplot(means_data, aes(x = Characteristic, y = Mean, fill = Characteristic)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal() +\n  labs(title = \"Mean Values of Song Characteristics\",\n       x = \"Characteristic\",\n       y = \"Mean\") +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "QuartoPresentation.html#goals-of-quarto",
+    "href": "QuartoPresentation.html#goals-of-quarto",
+    "title": "Quarto Presentations",
+    "section": "Goals of Quarto",
+    "text": "Goals of Quarto\n\n\nQuarto is an open source publishing platform that allows users to create sleek presentations within R studio and other platforms\nThe aim was to create a publishing environment that made it simple to insert code, plots, etc.\nThis would help make presenting research and publications simpler with the aim of making it much easier to reproduce in order to further that research"
+  },
+  {
+    "objectID": "QuartoPresentation.html#options-for-presentation",
+    "href": "QuartoPresentation.html#options-for-presentation",
+    "title": "Quarto Presentations",
+    "section": "Options for Presentation",
+    "text": "Options for Presentation\n\n\nQuarto offers a wide variety of document and presentation formats as well as being versatile with projects and and project types\nQuarto utilizes many of the functionalities of R Markdown and puts them into a single consistent system that expands it support for programming languages"
+  },
+  {
+    "objectID": "QuartoPresentation.html#options-for-presentation-1",
+    "href": "QuartoPresentation.html#options-for-presentation-1",
+    "title": "Quarto Presentations",
+    "section": "Options for Presentation",
+    "text": "Options for Presentation"
+  },
+  {
+    "objectID": "QuartoPresentation.html#getting-started-1",
+    "href": "QuartoPresentation.html#getting-started-1",
+    "title": "Quarto Presentations",
+    "section": "Getting Started",
+    "text": "Getting Started\n\n\nOnce in RStudio, click the new file drop down and select Quarto Presentation or Document\nThis will bring up a window that allows you to name and pick the format you desire"
+  },
+  {
+    "objectID": "QuartoPresentation.html#getting-started-cont.",
+    "href": "QuartoPresentation.html#getting-started-cont.",
+    "title": "Quarto Presentations",
+    "section": "Getting Started cont.",
+    "text": "Getting Started cont.\n\nYour document will start with some formatting options at the top\nThis allows the user to choose the theme and the title and other information if required (date, output format, etc.)"
+  },
+  {
+    "objectID": "QuartoPresentation.html#editing-options",
+    "href": "QuartoPresentation.html#editing-options",
+    "title": "Quarto Presentations",
+    "section": "Editing Options",
+    "text": "Editing Options\n\n\nMarkdown is not only for data scientists, it has options that it make it much simpler to use than a software like latex\nThis is due to the editor options\n\nSource: Code editor where the format follows the normal Rmarkdown editor style\nVisual: An editor that operates a little more like a Microsoft Product with more built in features for people unfamiliar with RStudio/RMarkdown"
+  },
+  {
+    "objectID": "QuartoPresentation.html#editing-options-cont.",
+    "href": "QuartoPresentation.html#editing-options-cont.",
+    "title": "Quarto Presentations",
+    "section": "Editing Options Cont.",
+    "text": "Editing Options Cont.\n\n\nThe visual editor simplifies the look and feel of the editing, making screen shots easy to paste and being able to switch text options with the toolbar at the top\nThe visual editor also has all the same code chunk abilities in case a data scientists hopes to simplify the presentation aspects but still wants to add code\nAdds to the flexibility of the publishing platform’"
+  },
+  {
+    "objectID": "QuartoPresentation.html#text-in-quarto",
+    "href": "QuartoPresentation.html#text-in-quarto",
+    "title": "Quarto Presentations",
+    "section": "Text in Quarto",
+    "text": "Text in Quarto\n\n\nQuarto has different header options that in the source editor you can alter by the amount of # you put in front of the text\nBullet points are marked with a dash before entering your text\n\nTwo tabs and dash will give you sub-points to attach texts"
+  },
+  {
+    "objectID": "QuartoPresentation.html#images-in-quarto",
+    "href": "QuartoPresentation.html#images-in-quarto",
+    "title": "Quarto Presentations",
+    "section": "Images in Quarto",
+    "text": "Images in Quarto\n\n\nWhen in the source editor, you can add images into the presentation by defining the path\nYou can alter its placement in the slide and its size with brackets after defining the path\nThe format for entering an image is [*path]{}"
+  },
+  {
+    "objectID": "QuartoPresentation.html#animations",
+    "href": "QuartoPresentation.html#animations",
+    "title": "Quarto Presentations",
+    "section": "Animations",
+    "text": "Animations\n\nQuarto offers built animations for text, image, and code chunks\nYou can also animate between slides with {auto-animate}\nWhen is source mode, slides can be formatted between chunks starting and ending with ‘:::’"
+  },
+  {
+    "objectID": "QuartoPresentation.html#code-chunks-in-quarto",
+    "href": "QuartoPresentation.html#code-chunks-in-quarto",
+    "title": "Quarto Presentations",
+    "section": "Code Chunks in Quarto",
+    "text": "Code Chunks in Quarto\n\n\nThe main advantage of Quarto to other presentation formats is having interactive code chunks within a document\nThe user can also alter the settings in case they just want the output to be visible and not the code itself\nQuarto has support for up to 140 langauges and even if it doesn’t support it you can establish the code and at least display the code for your audience"
+  },
+  {
+    "objectID": "QuartoPresentation.html#code-chunks-in-quarto-examples",
+    "href": "QuartoPresentation.html#code-chunks-in-quarto-examples",
+    "title": "Quarto Presentations",
+    "section": "Code Chunks in Quarto examples",
+    "text": "Code Chunks in Quarto examples\n\nlibrary(ggplot2)\n\nmpg &lt;- mtcars\nggplot(mpg, aes(disp, hp, color = mpg)) +\n  geom_smooth(method = 'lm') + \n  geom_point()"
+  },
+  {
+    "objectID": "QuartoPresentation.html#code-chunk-configuration",
+    "href": "QuartoPresentation.html#code-chunk-configuration",
+    "title": "Quarto Presentations",
+    "section": "Code Chunk Configuration",
+    "text": "Code Chunk Configuration\n\n\n#| include:\n\nPrevents code and results from appearing but still runs it\n\n#| echo:\n\nShows results but not the code\n\n#| message:\n\nwill hide messages if set to false"
+  },
+  {
+    "objectID": "QuartoPresentation.html#code-chunk-cont.",
+    "href": "QuartoPresentation.html#code-chunk-cont.",
+    "title": "Quarto Presentations",
+    "section": "Code Chunk cont.",
+    "text": "Code Chunk cont.\n\n\n#| warning:\n\nWill hide any code warning if option set to false\n\n#| fig.cap:\n\nAdds a caption if graphics are involved\n\n#| code-fold:\n\nIf you put this at the top of the codes formatting options, will have code operate as a drop down"
+  },
+  {
+    "objectID": "QuartoPresentation.html#extra-formatting-tricks",
+    "href": "QuartoPresentation.html#extra-formatting-tricks",
+    "title": "Quarto Presentations",
+    "section": "Extra Formatting Tricks",
+    "text": "Extra Formatting Tricks\n\n\nYou can Bold and Italicize and even Bold Italicize based on the number of asterisks put you surround the text int.\n\nBold: 2, Ital: 1, Bold Ital: 3\n\nSubscript and Superscript can be done with ^^ ~~\n\n22 or a2\n\nMath equations can be manually put in when between dollar signs dollar signs\n\n\\[ y = mx + b  \\]\n\\(y = mx + b\\)"
+  },
+  {
+    "objectID": "QuartoPresentation.html#extra-formatting-tricks-cont.",
+    "href": "QuartoPresentation.html#extra-formatting-tricks-cont.",
+    "title": "Quarto Presentations",
+    "section": "Extra Formatting Tricks cont.",
+    "text": "Extra Formatting Tricks cont.\n\n\nYou can make custom tables by hand in Quarto marking coulmns with a stack of | and below the titles of each column running dashes under column title\nYou can then format where the text goes in the heading with colons\n\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+  },
+  {
+    "objectID": "QuartoPresentation.html#extra-formatting-tricks-cont.-1",
+    "href": "QuartoPresentation.html#extra-formatting-tricks-cont.-1",
+    "title": "Quarto Presentations",
+    "section": "Extra Formatting Tricks cont.",
+    "text": "Extra Formatting Tricks cont.\n\nYou can make flowcharts right inside Quarto using mermaid, label a codechunk with mermaid and you’ll be able to make it\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Use Quarto?}\n  C --&gt; D[Yes]\n  C --&gt; E[YES]\n\n\n\n\n\n\n\nQuarto supports Mermaid and Graphiz for all of your diagram needs\nFind out more here https://quarto.org/docs/authoring/diagrams.html"
+  },
+  {
+    "objectID": "QuartoPresentation.html#extra-formatting-tricks-cont.-2",
+    "href": "QuartoPresentation.html#extra-formatting-tricks-cont.-2",
+    "title": "Quarto Presentations",
+    "section": "Extra Formatting Tricks cont.",
+    "text": "Extra Formatting Tricks cont.\n\nYou can create callout blocks that can act as warnings or notes for a reader to take note of as they read\n\n\n\n\n\n\n\nNote\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and `important’\n\n\n\n\n\n\n\n\n\nWarning\n\n\nQuarto is pretty lit!"
+  },
+  {
+    "objectID": "QuartoPresentation.html#section",
+    "href": "QuartoPresentation.html#section",
+    "title": "Quarto Presentations",
+    "section": "",
+    "text": "Example Presentation"
+  },
+  {
+    "objectID": "QuartoPresentation.html#section-1",
+    "href": "QuartoPresentation.html#section-1",
+    "title": "Quarto Presentations",
+    "section": "",
+    "text": "My Music Taste is Better Than Yours"
+  },
+  {
+    "objectID": "QuartoPresentation.html#spotify",
+    "href": "QuartoPresentation.html#spotify",
+    "title": "Quarto Presentations",
+    "section": "Spotify",
+    "text": "Spotify\n\nSpotify has become one of the top streaming platforms after being created in 2008\nI personally use it to listen to better music than you like\nYou can actually find your playlist data online and export it"
+  },
+  {
+    "objectID": "QuartoPresentation.html#spotify-data",
+    "href": "QuartoPresentation.html#spotify-data",
+    "title": "Quarto Presentations",
+    "section": "Spotify Data",
+    "text": "Spotify Data\n\nThis data is from Exportify where you can turn your playlist into a csv and look through the data\nWe will remove some columns that are not necessary or less interesting and get to the bottom of why I have the best taste possibly of all time\nI’m loading the data in this slide but behind the scenes"
+  },
+  {
+    "objectID": "QuartoPresentation.html#cleaning-data",
+    "href": "QuartoPresentation.html#cleaning-data",
+    "title": "Quarto Presentations",
+    "section": "Cleaning Data",
+    "text": "Cleaning Data\n\nWe will remove the unnecessary columns to focus on Spotify’s analytics and details on the artists and songs\n\n\n\nCode\ndata &lt;- data[-c(1,2,6, 9,14,16)]\n\nhead(data)\n\n\n          Track.Name                Album.Name                   Artist.Name.s.\n1         Brianstorm Favourite Worst Nightmare                   Arctic Monkeys\n2 D Is For Dangerous Favourite Worst Nightmare                   Arctic Monkeys\n3    Altered Beast I    Murder of the Universe King Gizzard & The Lizard Wizard\n4       Teddy Picker Favourite Worst Nightmare                   Arctic Monkeys\n5  Old Yellow Bricks Favourite Worst Nightmare                   Arctic Monkeys\n6         Is This It                Is This It                      The Strokes\n  Duration..ms. Popularity             Added.At\n1        170226          0 2017-11-14T20:35:49Z\n2        136106          0 2017-11-14T20:35:49Z\n3        143853         33 2021-10-13T20:58:21Z\n4        163173          0 2017-11-14T20:35:49Z\n5        191200          0 2017-11-14T20:35:49Z\n6        151333         61 2017-11-14T20:35:49Z\n                                                        Genres Danceability\n1  garage rock,modern rock,permanent wave,rock,sheffield indie        0.422\n2  garage rock,modern rock,permanent wave,rock,sheffield indie        0.555\n3  australian psych,double drumming,microtonal,neo-psychedelic        0.399\n4  garage rock,modern rock,permanent wave,rock,sheffield indie        0.631\n5  garage rock,modern rock,permanent wave,rock,sheffield indie        0.665\n6 alternative rock,garage rock,modern rock,permanent wave,rock        0.667\n  Energy Loudness Speechiness Acousticness Instrumentalness Liveness Valence\n1  0.983   -4.105      0.2260     7.75e-05         2.17e-03   0.2550   0.402\n2  0.926   -4.685      0.0370     9.78e-06         1.34e-04   0.0808   0.765\n3  0.915   -3.656      0.0956     3.28e-03         3.00e-02   0.4080   0.303\n4  0.975   -3.296      0.0974     3.72e-04         1.92e-04   0.0734   0.794\n5  0.840   -4.346      0.0693     1.70e-04         1.32e-05   0.0862   0.728\n6  0.692   -8.361      0.0285     1.47e-01         3.75e-05   0.3490   0.846\n    Tempo Time.Signature\n1 165.224              4\n2 145.044              4\n3 103.307              3\n4 150.236              4\n5 135.141              4\n6  96.022              4"
+  },
+  {
+    "objectID": "QuartoPresentation.html#section-2",
+    "href": "QuartoPresentation.html#section-2",
+    "title": "Quarto Presentations",
+    "section": "",
+    "text": "library(dplyr)\nartist_counts &lt;- data %&gt;%\n  group_by(Artist.Name.s.) %&gt;%\n  summarise(count = n()) %&gt;%\n  arrange(desc(count))"
+  },
+  {
+    "objectID": "QuartoPresentation.html#section-3",
+    "href": "QuartoPresentation.html#section-3",
+    "title": "Quarto Presentations",
+    "section": "",
+    "text": "top_5_artists &lt;- head(artist_counts, 5)\n\nprint(top_5_artists)\n\n# A tibble: 5 × 2\n  Artist.Name.s.                   count\n  &lt;chr&gt;                            &lt;int&gt;\n1 King Gizzard & The Lizard Wizard   130\n2 Arctic Monkeys                      54\n3 The Hives                           46\n4 The Strokes                         41\n5 IDLES                               39\n\n\n\n\n\n\n\n\nWarning\n\n\nSome of these bands are too good! Listen at your own risk!"
+  },
+  {
+    "objectID": "QuartoPresentation.html#more-fun-facts-about-my-great-taste",
+    "href": "QuartoPresentation.html#more-fun-facts-about-my-great-taste",
+    "title": "Quarto Presentations",
+    "section": "More Fun Facts About my Great Taste",
+    "text": "More Fun Facts About my Great Taste\n\n\nThe average song length on my playlist is 3 minutes and 38 seconds\n\nThe longest song is 18 minutes and 18 seconds, The Dripping Tap by King Gizzard and the Lizard Wizard\n\nMy most common genre is… drumroll please…\n\nRock…\n\nIgnore that my average tempo is 125 bpm"
+  },
+  {
+    "objectID": "QuartoPresentation.html#spotify-analytics",
+    "href": "QuartoPresentation.html#spotify-analytics",
+    "title": "Quarto Presentations",
+    "section": "Spotify Analytics",
+    "text": "Spotify Analytics\n\nSpotify tracks qualities of music and gives them a rating\n\nThings like loudness, energy, danceability, etc.\n\nThis is the data they use to create Spotify Wrapped materials at the end of the year\nLets take some averages and see what makes a great playlist which I obviously have"
+  },
+  {
+    "objectID": "QuartoPresentation.html#constructing-analytics-barplot",
+    "href": "QuartoPresentation.html#constructing-analytics-barplot",
+    "title": "Quarto Presentations",
+    "section": "Constructing Analytics Barplot",
+    "text": "Constructing Analytics Barplot\n\nmeans_data &lt;- data.frame(\n  Characteristic = c(\"Danceability\", \"Loudness\", \"Energy\", \"Speechiness\", \"Acousticness\", \"Instrumentalness\"),\n  Mean = c(dance, loud, energy, speechiness, acoustic, instrumental)\n)\n\n\n\n\nCharacteristics\nAverages\n\n\n\n\nDanceability\n0.52427614\n\n\nLoudness\n-7.15420963\n\n\nEnergy\n0.72793411\n\n\nSpeechiness\n0.09737453\n\n\nAcousticness\n0.16400645\n\n\nInstrumentalness\n0.16562125"
+  },
+  {
+    "objectID": "QuartoPresentation.html#graph-of-most-important-qualaties",
+    "href": "QuartoPresentation.html#graph-of-most-important-qualaties",
+    "title": "Quarto Presentations",
+    "section": "Graph of Most Important Qualaties",
+    "text": "Graph of Most Important Qualaties\n\n\nCode\nlibrary(ggplot2)\n\nggplot(means_data, aes(x = Characteristic, y = Mean, fill = Characteristic)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal() +\n  labs(title = \"Mean Values of Song Characteristics\",\n       x = \"Characteristic\",\n       y = \"Mean\") +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))"
+  },
+  {
+    "objectID": "QuartoPresentation.html#okay-seriously",
+    "href": "QuartoPresentation.html#okay-seriously",
+    "title": "Quarto Presentations",
+    "section": "Okay Seriously",
+    "text": "Okay Seriously\n\n\nAlthough this is a silly example, I leveraged many of Quarto’s built in features\n\nCode chunks with animations\nImages and Text Formatting\nTables and Callout Windows\n\nHopefully, this highlights how much you can do with this as a publishing platform if you want to present code and information clearly to an audience"
+  },
+  {
+    "objectID": "QuartoPresentation.html#shiny-in-quarto",
+    "href": "QuartoPresentation.html#shiny-in-quarto",
+    "title": "Quarto Presentations",
+    "section": "Shiny in Quarto",
+    "text": "Shiny in Quarto\n\nQuarto has shiny projects integrated into its services\nThis allows you to integrate shiny’s interactive apps into documents the same way you can insert a code chunk in a standard quarto document\n{fig-align=“center” height=50% width = 80%}"
+  },
+  {
+    "objectID": "QuartoPresentation.html#making-a-website-with-quarto",
+    "href": "QuartoPresentation.html#making-a-website-with-quarto",
+    "title": "Quarto Presentations",
+    "section": "Making a Website with Quarto",
+    "text": "Making a Website with Quarto\n\n\nWhen you create a new project, you will have option to create a Quarto Website\nAfter naming it and choosing a directory, you have the option to automatically create a github repository, which will be important for publishing the website later\nThis will automatically give you 6 items in your directory and an example that you can look at after you set up the github pages information"
+  },
+  {
+    "objectID": "QuartoPresentation.html#making-a-website-with-quarto-cont.",
+    "href": "QuartoPresentation.html#making-a-website-with-quarto-cont.",
+    "title": "Quarto Presentations",
+    "section": "Making a Website with Quarto cont.",
+    "text": "Making a Website with Quarto cont.\n\n\nstyle.css\n\nThis is how you format your website, if you wanted to add more pages this is where you would do it\n\nindex.qmd\n\nThe first page you’ll see when you open the webpage, here you can alter it and and update it as you please\n\nabout.qmd\n\nThis is a second page that highlights more examples"
+  },
+  {
+    "objectID": "QuartoPresentation.html#github-steps-for-publishing",
+    "href": "QuartoPresentation.html#github-steps-for-publishing",
+    "title": "Quarto Presentations",
+    "section": "Github Steps for Publishing",
+    "text": "Github Steps for Publishing\n\n\nAn important step for setting this up on Github pages is is creating a folder in your directory for important publishing docs\nOnce you have connected your project to the Github repo, you can go to the Github Pages section in the settings of Github\nFrom there, you choose what branch to deploy from, and the folder for the publising docs, and after a quick refresh your webpage should be deployed"
+  },
+  {
+    "objectID": "QuartoPresentation.html#conclusion",
+    "href": "QuartoPresentation.html#conclusion",
+    "title": "Quarto Presentations",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nQuarto can service almost all publushing needs whether its research, corporate, or just for fun\nIts wide ranging document formats, supported coding languages, and web capabilities means its quite versatile for whatever project you want to get out there\nQuarto is a must learn for data scientists who want to be able to share relevent information with people who don’t understand the code as well as to those who do understand it"
+  },
+  {
+    "objectID": "QuartoPresentation.html#sources",
+    "href": "QuartoPresentation.html#sources",
+    "title": "Quarto Presentations",
+    "section": "Sources",
+    "text": "Sources\n\nhttps://quarto.org/docs/presentations/\nhttps://quarto.org/docs/authoring/figures.html\nhttps://quarto.org/docs/presentations/revealjs/advanced.html\nhttps://quarto.org/\nhttps://quarto.org/docs/authoring/markdown-basics.html\nhttps://quarto.org/docs/guide/"
   }
 ]

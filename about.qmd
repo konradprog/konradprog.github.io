@@ -2,8 +2,20 @@
 title: "About"
 ---
 
-About this site
+[Click here to open the presentation](./QuartoPresentation.qmd)
 
-```{r}
-1 + 1 + 1
-```
+## Sources
+
+-   <https://quarto.org/docs/presentations/>
+-   <https://quarto.org/docs/authoring/figures.html>
+-   <https://quarto.org/docs/presentations/revealjs/advanced.html>
+-   <https://quarto.org/>
+-   <https://quarto.org/docs/authoring/markdown-basics.html>
+-   <https://quarto.org/docs/guide/>
+
+![](images/clipboard-3146799296.png){fig-align="center"}
+
+## Try it Out!
+Quarto really is great I recommend trying it out because most of us will have to present our work in the future and its a very versatile tool!
+
+

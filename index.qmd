@@ -1,15 +1,158 @@
 ---
-title: "Capstone Quarto"
+title: "My Taste is Still Better than Yours"
 ---
 
-# The Power of Quarto
+![](images/clipboard-2151445987.png){fig-align='center'}
 
-Quarto is a very versatile publishing system that allows the users of it to:
+## Additions
+-   I wanted to add more of the code to my website in case anyone wanted to look more into my work as to how we figured out that I have the best taste
+-   I'll also leave the slide info for context
 
--   Make presentation
+```{r}
+data <- read.csv('playlist.csv')
 
--   Piss and Shit
+```
 
--   And even websites with the use of github pages
+
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+data <- data[-c(1,2,6, 9,14,16)]
+
+head(data)
+
+```
+
+##  {auto-animate="true"}
+
+```{r}
+#| echo: true
+library(dplyr)
+artist_counts <- data %>%
+  group_by(Artist.Name.s.) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+```
+
+##  {auto-animate="true"}
+
+```{r}
+#| echo: true
+top_5_artists <- head(artist_counts, 5)
+
+print(top_5_artists)
+
+
+```
+
+::: callout-warning
+Some of these bands are too good! Listen at your own risk!
+:::
+
+```{r, results='hide'}
+# Length Averages
+#| echo: false
+aveLength <- (mean(data$Duration..ms.) /1000)
+aveLength
+
+longest_song <-  max(data$Duration..ms., na.rm = TRUE)
+longest_song/1000
+max_index <- which.max(data$Duration..ms.)
+max_row <- data[max_index, ]
+print(max_row)
+
+aveTemp <- mean(data$Tempo,na.rm = TRUE)
+
+aveTemp
+
+```
+
+```{r, results='hide'}
+
+#| echo: false
+
+genres_split <- strsplit(data$Genres, split = ",")
+genres_vector <- unlist(genres_split)
+genres_freq <- table(genres_vector)
+print(genres_freq)
+sorted_genres <- sort(genres_freq, decreasing = TRUE)
+most_frequent_genre <- names(sorted_genres)[1]
+
+
+print(most_frequent_genre)
+
+
+```
+
+## More Fun Facts About my Great Taste
+
+::: incremental
+-   The average song length on my playlist is 3 minutes and 38 seconds
+    -   The longest song is 18 minutes and 18 seconds, The Dripping Tap by King Gizzard and the Lizard Wizard
+-   My most common genre is... drumroll please...
+    -   Rock...
+-   Ignore that my average tempo is 125 bpm
+:::
+
+## Spotify Analytics
+
+-   Spotify tracks qualities of music and gives them a rating
+    -   Things like loudness, energy, danceability, etc.
+-   This is the data they use to create Spotify Wrapped materials at the end of the year
+-   Lets take some averages and see what makes a great playlist which I obviously have
+
+```{r}
+dance <- mean(data$Danceability, na.rm = TRUE)
+loud <- mean(data$Loudness, na.rm = TRUE)
+energy <- mean(data$Energy, na.rm = TRUE)
+speechiness <- mean(data$Speechiness, na.rm = TRUE)
+acoustic <- mean(data$Acousticness, na.rm = TRUE)
+instrumental <- mean(data$Instrumentalness, na.rm = TRUE)
+
+
+
+```
+
+## Constructing Analytics Barplot
+
+```{r}
+#| echo: true
+
+means_data <- data.frame(
+  Characteristic = c("Danceability", "Loudness", "Energy", "Speechiness", "Acousticness", "Instrumentalness"),
+  Mean = c(dance, loud, energy, speechiness, acoustic, instrumental)
+)
+
+```
+
+| Characteristics  | Averages    |
+|------------------|-------------|
+| Danceability     | 0.52427614  |
+| Loudness         | -7.15420963 |
+| Energy           | 0.72793411  |
+| Speechiness      | 0.09737453  |
+| Acousticness     | 0.16400645  |
+| Instrumentalness | 0.16562125  |
+
+## Graph of Most Important Qualaties
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| warning: false
+
+library(ggplot2)
+
+ggplot(means_data, aes(x = Characteristic, y = Mean, fill = Characteristic)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(title = "Mean Values of Song Characteristics",
+       x = "Characteristic",
+       y = "Mean") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
