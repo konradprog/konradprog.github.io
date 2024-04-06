@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Click here to open the presentation\n\n1 + 1 + 1\n\n[1] 3"
+    "text": "Click here to open the presentation"
   },
   {
     "objectID": "ShinyQuarto.html",
@@ -389,14 +389,14 @@
     "href": "index.html#graph-of-most-important-qualaties",
     "title": "My Taste is Still Better than Yours",
     "section": "Graph of Most Important Qualaties",
-    "text": "Graph of Most Important Qualaties\n\n\nCode\nlibrary(ggplot2)\n\n\nWarning: package 'ggplot2' was built under R version 4.2.3\n\n\nCode\nggplot(means_data, aes(x = Characteristic, y = Mean, fill = Characteristic)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal() +\n  labs(title = \"Mean Values of Song Characteristics\",\n       x = \"Characteristic\",\n       y = \"Mean\") +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Graph of Most Important Qualaties\n\n\nCode\nlibrary(ggplot2)\n\nggplot(means_data, aes(x = Characteristic, y = Mean, fill = Characteristic)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal() +\n  labs(title = \"Mean Values of Song Characteristics\",\n       x = \"Characteristic\",\n       y = \"Mean\") +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "QuartoPresentation.html#goals-of-quarto",
     "href": "QuartoPresentation.html#goals-of-quarto",
     "title": "Quarto Presentations",
     "section": "Goals of Quarto",
-    "text": "Goals of Quarto\n\n\nQuarto is an open source publishing platform that allows users to create sleek presentations within R studio and other platforms\nThe aim was to create a publishing environment that made it simple to insert code, plots, etc.\nThis would help make presenting research and publications simpler with the aim of making it much easier to reproduce in order to further that research"
+    "text": "Goals of Quarto\n\n\nQuarto is an open source publishing platform that allows users to create sleek documents, presentations, and even websites within R studio and other platforms\nThe aim was to create a publishing environment that made it simple to insert code, plots, etc.\nThis would help make presenting research and publications simpler with the aim of making it much easier to reproduce in order to further that research"
   },
   {
     "objectID": "QuartoPresentation.html#options-for-presentation",
@@ -452,7 +452,7 @@
     "href": "QuartoPresentation.html#images-in-quarto",
     "title": "Quarto Presentations",
     "section": "Images in Quarto",
-    "text": "Images in Quarto\n\n\nWhen in the source editor, you can add images into the presentation by defining the path\nYou can alter its placement in the slide and its size with brackets after defining the path\nThe format for entering an image is [*path]{}"
+    "text": "Images in Quarto\n\n\nWhen in the source editor, you can add images into the presentation by defining the path\nYou can alter its placement in the slide and its size with brackets after defining the path\nThe format for entering an image is ![*path]{}"
   },
   {
     "objectID": "QuartoPresentation.html#animations",
@@ -494,7 +494,7 @@
     "href": "QuartoPresentation.html#extra-formatting-tricks",
     "title": "Quarto Presentations",
     "section": "Extra Formatting Tricks",
-    "text": "Extra Formatting Tricks\n\n\nYou can Bold and Italicize and even Bold Italicize based on the number of asterisks put you surround the text int.\n\nBold: 2, Ital: 1, Bold Ital: 3\n\nSubscript and Superscript can be done with ^^ ~~\n\n22 or a2\n\nMath equations can be manually put in when between dollar signs dollar signs\n\n\\[ y = mx + b  \\]\n\\(y = mx + b\\)"
+    "text": "Extra Formatting Tricks\n\n\nYou can Bold and Italicize and even Bold Italicize based on the number of asterisks put you surround the text int.\nSubscript and Superscript can be done with ^^ ~~\n\n22 or a2\n\nMath equations can be manually put in when between dollar signs dollar signs\n\n\\[ y = mx + b  \\]\n\\(y = mx + b\\)"
   },
   {
     "objectID": "QuartoPresentation.html#extra-formatting-tricks-cont.",
@@ -642,5 +642,26 @@
     "title": "Quarto Presentations",
     "section": "Sources",
     "text": "Sources\n\nhttps://quarto.org/docs/presentations/\nhttps://quarto.org/docs/authoring/figures.html\nhttps://quarto.org/docs/presentations/revealjs/advanced.html\nhttps://quarto.org/\nhttps://quarto.org/docs/authoring/markdown-basics.html\nhttps://quarto.org/docs/guide/"
+  },
+  {
+    "objectID": "about.html#sources",
+    "href": "about.html#sources",
+    "title": "About",
+    "section": "Sources",
+    "text": "Sources\n\nhttps://quarto.org/docs/presentations/\nhttps://quarto.org/docs/authoring/figures.html\nhttps://quarto.org/docs/presentations/revealjs/advanced.html\nhttps://quarto.org/\nhttps://quarto.org/docs/authoring/markdown-basics.html\nhttps://quarto.org/docs/guide/"
+  },
+  {
+    "objectID": "about.html#try-it-out",
+    "href": "about.html#try-it-out",
+    "title": "About",
+    "section": "Try it Out!",
+    "text": "Try it Out!\nQuarto really is great I recommend trying it out because most of us will have to present our work in the future and its a very versatile tool!"
+  },
+  {
+    "objectID": "index.html#additions",
+    "href": "index.html#additions",
+    "title": "My Taste is Still Better than Yours",
+    "section": "Additions",
+    "text": "Additions\n\nI wanted to add more of the code to my website in case anyone wanted to look more into my work as to how we figured out that I have the best taste\nI’ll also leave the slide info for context\n\n\ndata &lt;- read.csv('playlist.csv')\n\n\n\nCode\ndata &lt;- data[-c(1,2,6, 9,14,16)]\n\nhead(data)\n\n\n          Track.Name                Album.Name                   Artist.Name.s.\n1         Brianstorm Favourite Worst Nightmare                   Arctic Monkeys\n2 D Is For Dangerous Favourite Worst Nightmare                   Arctic Monkeys\n3    Altered Beast I    Murder of the Universe King Gizzard & The Lizard Wizard\n4       Teddy Picker Favourite Worst Nightmare                   Arctic Monkeys\n5  Old Yellow Bricks Favourite Worst Nightmare                   Arctic Monkeys\n6         Is This It                Is This It                      The Strokes\n  Duration..ms. Popularity             Added.At\n1        170226          0 2017-11-14T20:35:49Z\n2        136106          0 2017-11-14T20:35:49Z\n3        143853         33 2021-10-13T20:58:21Z\n4        163173          0 2017-11-14T20:35:49Z\n5        191200          0 2017-11-14T20:35:49Z\n6        151333         61 2017-11-14T20:35:49Z\n                                                        Genres Danceability\n1  garage rock,modern rock,permanent wave,rock,sheffield indie        0.422\n2  garage rock,modern rock,permanent wave,rock,sheffield indie        0.555\n3  australian psych,double drumming,microtonal,neo-psychedelic        0.399\n4  garage rock,modern rock,permanent wave,rock,sheffield indie        0.631\n5  garage rock,modern rock,permanent wave,rock,sheffield indie        0.665\n6 alternative rock,garage rock,modern rock,permanent wave,rock        0.667\n  Energy Loudness Speechiness Acousticness Instrumentalness Liveness Valence\n1  0.983   -4.105      0.2260     7.75e-05         2.17e-03   0.2550   0.402\n2  0.926   -4.685      0.0370     9.78e-06         1.34e-04   0.0808   0.765\n3  0.915   -3.656      0.0956     3.28e-03         3.00e-02   0.4080   0.303\n4  0.975   -3.296      0.0974     3.72e-04         1.92e-04   0.0734   0.794\n5  0.840   -4.346      0.0693     1.70e-04         1.32e-05   0.0862   0.728\n6  0.692   -8.361      0.0285     1.47e-01         3.75e-05   0.3490   0.846\n    Tempo Time.Signature\n1 165.224              4\n2 145.044              4\n3 103.307              3\n4 150.236              4\n5 135.141              4\n6  96.022              4"
   }
 ]
